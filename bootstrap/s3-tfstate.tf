@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = ""
+  bucket = var.bucket_name
 
   #Enable server-side encryption by default
   server_side_encryption_configuration {
